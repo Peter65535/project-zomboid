@@ -1,4 +1,4 @@
-FROM ghcr.io/cyrale/linuxgsm:0.2.1
+FROM peter65535/linuxgsm
 
 # Steam ports
 ENV STEAM_PORT_1=8766  \
@@ -14,7 +14,7 @@ ENV STEAM_PORT_1=8766  \
     SERVER_BRANCH="" \
     SERVER_BETA_PASSWORD="" \
     # Admin DB Password (required for the first launch)
-    ADMIN_PASSWORD="pzserver-password" \
+    ADMIN_PASSWORD="a-really-insecure-default-password" \
     # Server port
     SERVER_PORT=16261 \
     # Game UDP port to allow player to contact the server (by default : 10 players)
